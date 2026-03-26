@@ -1,14 +1,14 @@
 import 'dart:io';
 
 void main() {
-  stdout.write('Qual a nota da prova? ');
+  stdout.write("Digite a nota da prova:");
   String? valor1 = stdin.readLineSync();
-  double? prova = double.tryParse(valor1!) ?? 0.0;
+  double? valorProva = double.tryParse(valor1!) ?? 0.0;
 
-  stdout.write('Qual a nota do trabalho? ');
-  double? trabalho = double.tryParse(stdin.readLineSync()!) ?? 0.0;
+  stdout.write("Digite a nota do trabalho: ");
+  double? valorTrabalho = double.tryParse(stdin.readLineSync()!) ?? 0.0;
 
-  double? media = prova * 0.6 + trabalho * 0.4;
+  double? media = valorProva * 0.6 + valorTrabalho * 0.4;
 
-  stdout.write('A sua média é $media\n');
+  print("A sua média é $media\n");
 }

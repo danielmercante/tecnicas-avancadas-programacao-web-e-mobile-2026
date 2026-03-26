@@ -1,5 +1,5 @@
-import 'package:fundamentos_do_dart/fundamentos_do_dart.dart' as fundamentos_do_dart;
+import 'dart:io';
 
-void main(List<String> arguments) {
-  print('Hello world: ${fundamentos_do_dart.calculate()}!');
+void main (){
+  stdout.write("Olá, mundo!\n");
 }
